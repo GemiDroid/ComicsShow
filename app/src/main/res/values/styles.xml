@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Widget.Theme.ComicsShow.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.ComicsShow.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/colorGreyWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

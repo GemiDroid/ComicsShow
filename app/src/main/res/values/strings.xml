@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ComicsShow</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="enter_search_here">Search here!</string>
+    <string name="no_internet_issue">No internet connection!!</string>
+    <string name="comic_details">Comic Details</string>
+    <string name="favourites">Favourites</string>
+    <string name="sharing">Share Image</string>
+    <string name="back">Back</string>
+    <string name="banner">Banner</string>
+</resources>

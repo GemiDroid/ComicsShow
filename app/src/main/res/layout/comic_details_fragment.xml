@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clt_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_comic_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center|start"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintEnd_toStartOf="@id/img_add_to_fav"
+            app:layout_constraintStart_toEndOf="@id/img_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/comic_details" />
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:contentDescription="@string/sharing"
+            android:padding="@dimen/padding_5"
+            android:src="@drawable/ic_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_add_to_fav"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:contentDescription="@string/favourites"
+            android:padding="@dimen/padding_5"
+            android:src="@drawable/ic_unfavorite"
+            app:layout_constraintEnd_toStartOf="@id/img_share"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:contentDescription="@string/back"
+            android:padding="@dimen/padding_5"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clt_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10">
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/banner"
+                app:layout_constraintHeight_percent=".6"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/txt_alt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:textColor="@color/coloGreen"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintStart_toStartOf="@id/img_banner"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_20"
+                app:layout_constraintTop_toBottomOf="@id/img_banner"
+                tools:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txt_outlines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/font_16"
+                app:layout_constraintTop_toBottomOf="@id/txt_title"
+                tools:text="outlines" />
+
+            <TextView
+                android:id="@+id/txt_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:autoLink="all"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/font_16"
+                app:layout_constraintTop_toBottomOf="@id/txt_outlines"
+                tools:text="link" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

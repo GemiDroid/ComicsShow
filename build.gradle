@@ -1,0 +1,23 @@
+buildscript {
+    ext.kotlin_version = "1.5.31"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+ext{
+    KOIN_VERSION = '2.2.3'
+    LOGGING_INTERCEPTOR_VERSION = '4.8.0'
+    RECYCLE_VIEW_VERSION = '1.2.1'
+    CIRCLE_IMAGEVIEW_VERSION = '3.1.0'
+    GLIDE_VERSION = '4.11.0'
+    ROOM_VERSION = '2.3.0'
+}
