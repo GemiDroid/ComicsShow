@@ -1,4 +1,6 @@
-# ComicsShow app: Display comics and search for any favourites one.
+<h2 align="center">ComicsShow app</h2>
+
+### Display comics and search for any favourites one.
 
 #### Technologies used:
 - Koin: For injecting class and providing modules on runtime :).
